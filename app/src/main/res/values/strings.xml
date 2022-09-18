@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">panache</string>
+    <string name="Click">Click one of the following answers: </string>
+    <string name="a1">10-25 Years Old</string>
+    <string name="a2">30-40 Years Old</string>
+    <string name="a3">45-70 Years Old</string>
+    <string name="avg">What is the average age of an elephant?</string>
+</resources>

@@ -1,8 +1,8 @@
 ## Lab1Panache
-lab 1 codepath 
+Lab 1 Codepath 
 
 ### App Description
-`TODO://` Add app description
+Panache is a so far a flashcard study and exam tool. 
 
 ### App Walk-though
 `TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)

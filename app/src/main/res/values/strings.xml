@@ -5,4 +5,5 @@
     <string name="a2">30-40 Years Old</string>
     <string name="a3">45-70 Years Old</string>
     <string name="avg">What is the average age of an elephant?</string>
+    <string name="Mode">Click for Study/Exam Mode</string>
 </resources>

@@ -4,25 +4,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
 
-    <!-- question <TextView
+    <TextView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/cardview_dark_background" />
+
+    <TextView
         android:layout_width="410dp"
         android:layout_height="500dp"
         android:gravity="center"
         android:text="@string/Click"
         android:textColor="@color/purple_200"
-        android:textSize="30sp" /> -->
+        android:textSize="30sp" />
     <!-- click on of the following-->
-        <TextView
-            android:id="@+id/flashcard_question"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@drawable/solid_color_shape"
-            android:gravity="center"
-            android:text="@string/avg"
-            android:textSize="40sp" />
+    <TextView
+        android:id="@+id/flashcard_question"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/solid_color_shape"
+        android:gravity="center"
+        android:text="@string/avg"
+        android:textSize="40sp" />
     <!-- question -->
     <TextView
         android:id="@+id/flashcard_answer"
@@ -30,18 +37,57 @@
         android:layout_height="200dp"
         android:background="@drawable/solid_color_shape"
         android:gravity="center"
+        android:textColor="@color/purple_200"
         android:text="@string/a3"
         android:textSize="40sp"
         android:visibility="invisible" />
-    <!-- a3
+    <!-- a3 answer flashcard -->
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/a1"
         android:layout_width="350dp"
         android:layout_height="85dp"
         android:layout_centerInParent="true"
         android:background="@drawable/card_background"
         android:gravity="center"
         android:text="@string/a1"
-        android:textSize="30sp" /> -->
+        android:textSize="30sp" />
     <!-- a1 -->
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="@+id/a1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="187dp"
+        android:background="@drawable/card_background"
+        android:gravity="center"
+        android:text="@string/a2"
+        android:textSize="30sp" />
+    <!-- a2 -->
+    <TextView
+        android:id="@+id/a3"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/card_background"
+        android:gravity="center"
+        android:text="@string/a3"
+        android:textSize="30sp" />
+    <!-- a3 -->
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/card_background"
+        android:gravity="center"
+        android:text="@string/Mode"
+        android:textSize="20sp" />
+    <!-- mode  -->
     </RelativeLayout>

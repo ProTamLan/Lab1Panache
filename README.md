@@ -5,7 +5,6 @@ Lab 1 Codepath
 Panache is a so far a flashcard study and exam tool. 
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
 
 
 https://user-images.githubusercontent.com/75819639/190942456-7f8d53a7-28ea-4eab-92e4-9876792cb25e.mp4

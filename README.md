@@ -1,9 +1,9 @@
 
 ## Lab1Panache
-#Lab 2
+##Lab 2
 
 ### App Description
-30Panache is a so far a flashcard study and exam tool. 
+Panache is a so far a flashcard study and exam tool. 
 
 ### App Walk-though
 mp4

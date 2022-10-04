@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
             correctanswer.visibility = View.INVISIBLE //Issue makes flashcard invisible
             Toast.makeText(this, "Flashcard button was flipped", Toast.LENGTH_SHORT).show()
         }
-
         answer1.setOnClickListener {
             findViewById<View>(R.id.a1).setBackgroundColor(getResources().getColor(R.color.red, null))
             findViewById<View>(R.id.a3).setBackgroundColor(getResources().getColor(R.color.green, null))
@@ -78,6 +77,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Exam button was clicked (2)", Toast.LENGTH_SHORT).show()
             }
         }
+
         val resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
                 result ->
             val data: Intent? = result.data
@@ -95,12 +95,14 @@ class MainActivity : AppCompatActivity() {
                 Log.i("Alan: MainActivity", "Returned null data from AddCardActivity")
             }
         }
-        val addQuestionButton = findViewById<ImageView>(R.id.add_question_button)
-        addQuestionButton.setOnClickListener {
+
+        val addQuestionButton=findViewById<ImageView>(R.id.add_question_button)
+        addQuestionButton.setOnClickListener { Log.i("Alan: MainActivity", "Returned null data from AddCardActivity")
             val intent = Intent(this, AddCardActivity::class.java)
             // Launch EndingActivity with the resultLauncher so we can execute more code - once we come back here from EndingActivity
+            Log.i("Alan: MainActivity", "Returned null data from AddCardActivity")
             resultLauncher.launch(intent)
-            //Log.i("Yes", "WasClicked")
+            Log.i("Yes", "WasClicked")
 
         }
     }

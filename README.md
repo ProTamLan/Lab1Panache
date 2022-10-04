@@ -6,7 +6,11 @@ Lab2~
 Panache is a so far a flashcard study and exam tool. 
 
 ### App Walk-though
-mp4
+
+
+
+https://user-images.githubusercontent.com/75819639/193887706-1a37c166-19c2-4d73-b54f-6dbbb43047ca.mp4
+
 
 ## Required
 - [ ] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
@@ -19,8 +23,8 @@ mp4
 - [ ] User can edit a card
 - [ ] An error message is shown if the user doesn't enter both a Question and an Answer
 - [ ] A notification is shown if the card was created successfully
-- [ ] User can also enter multiple choice answers when creating a card
-- [ ] App is further styled and customized!
+- [x] User can also enter multiple choice answers when creating a card
+- [x] App is further styled and customized!
 
 
 Lab1~

@@ -84,10 +84,19 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
+        android:layout_marginBottom="14dp"
         android:background="@drawable/card_background"
         android:gravity="center"
         android:text="@string/Mode"
         android:textSize="20sp" />
-    <!-- mode  -->
+    <!-- mode or button icon to show/unshow answers -->
+    <ImageView
+        android:id="@+id/add_question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
     </RelativeLayout>

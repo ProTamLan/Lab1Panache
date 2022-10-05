@@ -9,20 +9,19 @@ Panache is a so far a flashcard study and exam tool.
 
 
 
-https://user-images.githubusercontent.com/75819639/193887706-1a37c166-19c2-4d73-b54f-6dbbb43047ca.mp4
 
 
 ## Required
-- [ ] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
-- [ ] The 'Add Card Screen' has a cancel button to take the user back to the main screen
-- [ ] User can enter and submit a Question and Answer through the 'Add Card Screen'
-- [ ] User will see the card they just created on the main screen when they press the 'Save Button'
+- [x] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
+- [x] The 'Add Card Screen' has a cancel button to take the user back to the main screen
+- [x] User can enter and submit a Question and Answer through the 'Add Card Screen'
+- [x] User will see the card they just created on the main screen when they press the 'Save Button'
 - [x] Push your progress to GitHub!
 
 ## Optional
 - [ ] User can edit a card
-- [ ] An error message is shown if the user doesn't enter both a Question and an Answer
-- [ ] A notification is shown if the card was created successfully
+- [x] An error message is shown if the user doesn't enter both a Question and an Answer
+- [x] A notification is shown if the card was created successfully
 - [x] User can also enter multiple choice answers when creating a card
 - [x] App is further styled and customized!
 

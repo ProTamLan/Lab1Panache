@@ -9,6 +9,10 @@ Panache is a so far a flashcard study and exam tool.
 
 
 
+https://user-images.githubusercontent.com/75819639/193988028-38ba40b7-a39c-4e52-b42e-d98ceca321b8.mp4
+
+
+
 
 
 ## Required

@@ -10,8 +10,11 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.google.android.material.snackbar.Snackbar
+import com.yourpackage.packagenamehere.Flashcard
+import com.yourpackage.packagenamehere.FlashcardDatabase
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -85,8 +88,11 @@ class MainActivity : AppCompatActivity() {
                 val questionString = data.getStringExtra("QUESTION_KEY") // needs to match the key we used when we put the string in the Intent
                 val answerString = data.getStringExtra("ANSWER_KEY")
 
+                val flashcard = Flashcard(questionString!!, answerString!!, wrongAnswer1 = null, wrongAnswer2 = null) //insures its not null
+                val flashcardDatabase = FlashcardDatabase(this)
+                flashcardDatabase.insertCard(flashcard)
                 question.text = questionString
-                answer3.text = answerString //ans3 = correct green ans
+                correctanswer.text = answerString //ans3 = correct green ans
 
                 Log.i("Alan: MainActivity", "question: $questionString")
                 Log.i("Alan: MainActivity", "answer: $answerString")
@@ -102,7 +108,7 @@ class MainActivity : AppCompatActivity() {
             // Launch EndingActivity with the resultLauncher so we can execute more code - once we come back here from EndingActivity
             Log.i("Alan: MainActivity", "Returned null data from AddCardActivity")
             resultLauncher.launch(intent)
-            Log.i("Yes", "WasClicked")
+            Log.i("Add card process", "WasClicked")
 
         }
     }

@@ -22,11 +22,11 @@ https://user-images.githubusercontent.com/75819639/193988028-38ba40b7-a39c-4e52-
 - [x] User will see the card they just created on the main screen when they press the 'Save Button'
 - [x] Push your progress to GitHub!
 
-## Optional
+## Optional - Soon
 - [ ] User can edit a card
-- [x] An error message is shown if the user doesn't enter both a Question and an Answer
-- [x] A notification is shown if the card was created successfully
-- [x] User can also enter multiple choice answers when creating a card
+- [ ] An error message is shown if the user doesn't enter both a Question and an Answer
+- [ ] A notification is shown if the card was created successfully
+- [ ] User can also enter multiple choice answers when creating a card
 - [x] App is further styled and customized!
 
 

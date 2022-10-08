@@ -39,7 +39,7 @@ https://user-images.githubusercontent.com/75819639/193988028-38ba40b7-a39c-4e52-
 - [x] Push your progress to GitHub!
 
 ## Optional - Soon
-- [ ] User can edit a card
+- [x] User can edit a card
 - [ ] An error message is shown if the user doesn't enter both a Question and an Answer
 - [ ] A notification is shown if the card was created successfully
 - [ ] User can also enter multiple choice answers when creating a card

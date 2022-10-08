@@ -5,7 +5,23 @@ Lab2~
 ### App Description
 Panache is a so far a flashcard study and exam tool. 
 
-### App Walk-though
+### App Walk-though (Lab3)
+
+
+## Required
+- [ ] User can create a card and still see their created card when the app is relaunched.
+- [ ] User can create muliple cards and browse through all created cards
+
+## Optional
+- [ ] User can delete a card and no longer see it in their deck anymore
+- [ ] Flashcards are shown in random order instead of the order they were created in
+- [ ] User can edit a card and see the edit saved when they browse through their deck of cards
+- [ ] User can create flashcards with multiple answers and be able to browse through cards with multiple choice answers shown
+
+
+
+
+### App Walk-though (Lab2)
 
 
 
@@ -33,7 +49,7 @@ https://user-images.githubusercontent.com/75819639/193988028-38ba40b7-a39c-4e52-
 Lab1~
 
 
-### App Walk-though
+### App Walk-though (Lab1)
 
 
 https://user-images.githubusercontent.com/75819639/190942456-7f8d53a7-28ea-4eab-92e4-9876792cb25e.mp4

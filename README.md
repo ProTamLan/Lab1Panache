@@ -40,10 +40,10 @@ https://user-images.githubusercontent.com/75819639/193988028-38ba40b7-a39c-4e52-
 
 ## Optional - Soon
 - [ ] User can edit a card
-- [ ] An error message is shown if the user doesn't enter both a Question and an Answer
-- [ ] A notification is shown if the card was created successfully
-- [ ] User can also enter multiple choice answers when creating a card
+- [x] An error message is shown if the user doesn't enter both a Question and an Answer
+- [x] A notification is shown if the card was created successfully
 - [x] App is further styled and customized!
+- [ ] User can also enter multiple choice answers when creating a card
 
 
 Lab1~

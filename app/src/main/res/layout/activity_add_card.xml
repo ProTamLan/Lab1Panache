@@ -33,7 +33,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/icon_save" />
+        android:src="@drawable/icon_save"
+        />
     <!-- save icon -->
     <ImageView
         android:id="@+id/flashcard_cancel_button"
@@ -45,7 +46,19 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/icon_cancel" />
+        android:src="@drawable/icon_cancel"
+        />
     <!-- cancel icon -->
-
+    <!--<ImageView
+        android:id="@+id/flashcard_next_card_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/icon_add" />
+    -->
 </RelativeLayout>

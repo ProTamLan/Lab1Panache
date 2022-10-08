@@ -15,6 +15,8 @@ import com.yourpackage.packagenamehere.FlashcardDatabase
 
 class MainActivity : AppCompatActivity() {
 
+    var currCardDisplayedIndex = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -88,13 +90,15 @@ class MainActivity : AppCompatActivity() {
                 val questionString = data.getStringExtra("QUESTION_KEY") // needs to match the key we used when we put the string in the Intent
                 val answerString = data.getStringExtra("ANSWER_KEY")
 
+                Snackbar.make(findViewById(R.id.add_question_button), "Card Created...", Snackbar.LENGTH_SHORT).show() // card created notification
+
                 val flashcard = Flashcard(questionString!!, answerString!!, wrongAnswer1 = null, wrongAnswer2 = null) //insures its not null
                 val flashcardDatabase = FlashcardDatabase(this)
                 flashcardDatabase.insertCard(flashcard)
                 question.text = questionString
                 correctanswer.text = answerString //ans3 = correct green ans
 
-                Log.i("Alan: MainActivity", "question: $questionString")
+                Log.i("Alan: MainActivity", "question: $questionString") //main flashcard page
                 Log.i("Alan: MainActivity", "answer: $answerString")
             }
             else {
@@ -103,13 +107,26 @@ class MainActivity : AppCompatActivity() {
         }
 
         val addQuestionButton=findViewById<ImageView>(R.id.add_question_button)
-        addQuestionButton.setOnClickListener { Log.i("Alan: MainActivity", "Returned null data from AddCardActivity")
+        addQuestionButton.setOnClickListener {
             val intent = Intent(this, AddCardActivity::class.java)
             // Launch EndingActivity with the resultLauncher so we can execute more code - once we come back here from EndingActivity
-            Log.i("Alan: MainActivity", "Returned null data from AddCardActivity")
             resultLauncher.launch(intent)
-            Log.i("Add card process", "WasClicked")
-
         }
+        /*val nextButton = findViewById<ImageView>(R.id.flashcard_next_card_button)
+        nextButton.setOnClickListener{
+            if (allFlashcards.isEmpty()){
+                return@setOnClickListener
+            }
+            currCardDisplayedIndex++
+            if(currCardDisplayedIndex >= allFlashcards.size){
+                //start
+                currCardDisplayedIndex=0
+            }
+            allFlashcards = flashcardDatabase.getAllCards().toMutableList()
+            val question= allFlashcards[currCardDisplayedIndex].question
+            val answer= allFlashcards[currCardDisplayedIndex].answer
+            flashcardQuestion.text=question
+            flashcardAnswer.text=correctanswer //ans or correct ans
+        }*/
     }
 }

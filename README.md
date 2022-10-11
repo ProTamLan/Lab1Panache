@@ -9,8 +9,8 @@ Panache is a so far a flashcard study and exam tool.
 
 
 ## Required
-- [ ] User can create a card and still see their created card when the app is relaunched.
-- [ ] User can create muliple cards and browse through all created cards
+- [x] User can create a card and still see their created card when the app is relaunched.
+- [x] User can create muliple cards and browse through all created cards
 
 ## Optional
 - [ ] User can delete a card and no longer see it in their deck anymore

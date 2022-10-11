@@ -8,6 +8,10 @@ Panache is a so far a flashcard study and exam tool.
 ### App Walk-though (Lab3)
 
 
+https://user-images.githubusercontent.com/75819639/195012037-815243fc-4e6f-43b3-b52b-adef5c545010.mp4
+
+
+
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.
 - [x] User can create muliple cards and browse through all created cards
@@ -24,10 +28,7 @@ Panache is a so far a flashcard study and exam tool.
 ### App Walk-though (Lab2)
 
 
-
 https://user-images.githubusercontent.com/75819639/193988028-38ba40b7-a39c-4e52-b42e-d98ceca321b8.mp4
-
-
 
 
 

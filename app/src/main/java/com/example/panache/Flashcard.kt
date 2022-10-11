@@ -1,4 +1,4 @@
-package com.yourpackage.packagenamehere
+package com.example.panache
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

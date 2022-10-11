@@ -1,4 +1,4 @@
-package com.yourpackage.packagenamehere
+package com.example.panache
 
 import androidx.room.Dao
 import androidx.room.Delete

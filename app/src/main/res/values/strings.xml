@@ -8,5 +8,7 @@
     <string name="Mode">Click for Study/Exam Mode</string>
     <string name="hint1">Enter The Question Here: </string>
     <string name="hint2">Enter The Answer Here: </string>
+    <string name="hint3">Enter Another Answer Here: </string>
+    <string name="hint4">Enter The Last Answer Here: </string>
 
 </resources>

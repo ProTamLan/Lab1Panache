@@ -1,4 +1,4 @@
-package com.yourpackage.packagenamehere
+package com.example.panache
 
 import android.content.Context
 import androidx.room.Room

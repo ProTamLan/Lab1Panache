@@ -1,6 +1,6 @@
 
 ## Lab1Panache
-Lab2~
+Lab3~
 
 ### App Description
 Panache is a so far a flashcard study and exam tool. 
@@ -24,7 +24,7 @@ https://user-images.githubusercontent.com/75819639/195012037-815243fc-4e6f-43b3-
 
 
 
-
+Lab2~
 ### App Walk-though (Lab2)
 
 

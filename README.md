@@ -7,6 +7,10 @@ Panache is a flashcard study and exam tool.
 
 ## App Walk-though
 
+
+https://user-images.githubusercontent.com/75819639/197687978-33012d64-7bc1-450e-9677-3caa855ee29d.mp4
+
+
 ## Required
 - [x] User sees a transition animation when going from the main screen to the add card screen.
 - [x] User sees a reveal animation when the flashcard is tapped and the answer is shown

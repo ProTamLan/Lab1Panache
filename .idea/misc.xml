@@ -9,12 +9,14 @@
         <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/drawable/cancelicon.xml" value="0.2405" />
         <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1655" />
         <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/drawable/icon_add.xml" value="0.257" />
+        <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/drawable/icon_cancel.xml" value="0.1905" />
         <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/drawable/icon_save.xml" value="0.268" />
+        <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/drawable/icon_timer.xml" value="0.1905" />
         <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/drawable/solid_color_shape.xml" value="0.123" />
         <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/layout/AddCardActivity.xml" value="0.25" />
         <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/layout/AndroidManifest.xml" value="0.23641304347826086" />
-        <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/layout/activity_add_card.xml" value="0.22" />
-        <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/layout/activity_add_card.xml" value="0.2" />
+        <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/layout/activity_main.xml" value="0.75" />
         <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/layout/add_card_activity.xml" value="0.25" />
         <entry key="..\:/Users/Alan M/AndroidStudioProjects/panache/app/src/main/res/xml/rectangle.xml" value="0.3365036231884058" />
       </map>

@@ -37,8 +37,8 @@
         android:layout_height="200dp"
         android:background="@drawable/solid_color_shape"
         android:gravity="center"
-        android:textColor="@color/purple_200"
         android:text="@string/a3"
+        android:textColor="@color/purple_200"
         android:textSize="40sp"
         android:visibility="invisible" />
     <!-- a3 answer flashcard -->
@@ -50,29 +50,31 @@
         android:background="@drawable/card_background"
         android:gravity="center"
         android:text="@string/a1"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        />
     <!-- a1 -->
     <TextView
         android:id="@+id/a2"
         android:layout_width="350dp"
         android:layout_height="85dp"
         android:layout_alignParentTop="@+id/a1"
+        android:layout_marginBottom="187dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
-        android:layout_marginBottom="187dp"
         android:background="@drawable/card_background"
         android:gravity="center"
         android:text="@string/a2"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        />
     <!-- a2 -->
     <TextView
         android:id="@+id/a3"
         android:layout_width="350dp"
         android:layout_height="85dp"
+        android:layout_alignParentTop="@+id/a2"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp"
         android:background="@drawable/card_background"
         android:gravity="center"
         android:text="@string/a3"
@@ -104,11 +106,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/icon_add"
-        />
-    <!-- next slide of flashcard icon -->
+        android:src="@drawable/icon_add" />
 
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/icon_timer" />
+
+</RelativeLayout>

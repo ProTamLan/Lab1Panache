@@ -5,17 +5,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.ViewAnimationUtils
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.google.android.material.snackbar.Snackbar
+//import android.os.CountDownTimer
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var flashcardDatabase: FlashcardDatabase
     var allFlashcards = mutableListOf<Flashcard>()
     var currentCardDisplayedIndex = 0
+    //var timerOn: CountDownTimer? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,15 +43,28 @@ class MainActivity : AppCompatActivity() {
         }
 
         question1.setOnClickListener {
+            val answerSideView = findViewById<View>(R.id.flashcard_answer)
+            val cx = answerSideView.width / 2
+            val cy = answerSideView.height / 2
+            val finalRadius = Math.hypot(cx.toDouble(), cy.toDouble()).toFloat()
+            val anim = ViewAnimationUtils.createCircularReveal(answerSideView, cx, cy, 0f, finalRadius)
             question1.visibility = View.INVISIBLE
             correctanswer.visibility = View.VISIBLE
-            Snackbar.make(question1, "Flashcard button was flipped", Snackbar.LENGTH_SHORT).show()
-            Log.i("Alan", "Flashcard button was flipped")
+            anim.duration = 850
+            anim.start()
+            //Snackbar.make(question1, "Flashcard button was flipped", Snackbar.LENGTH_SHORT).show()
+            //Log.i("Alan", "Flashcard button was flipped")
         }
         correctanswer.setOnClickListener {
+            val answerSideView = findViewById<View>(R.id.flashcard_question)
+            val cx = answerSideView.width / 2
+            val cy = answerSideView.height / 2
+            val finalRadius = Math.hypot(cx.toDouble(), cy.toDouble()).toFloat()
+            val anim = ViewAnimationUtils.createCircularReveal(answerSideView, cx, cy, 0f, finalRadius)
             question1.visibility = View.VISIBLE
             correctanswer.visibility = View.INVISIBLE //Issue makes flashcard invisible
-            Toast.makeText(this, "Flashcard button was flipped", Toast.LENGTH_SHORT).show()
+            anim.duration = 850
+            anim.start()
         }
         answer1.setOnClickListener {
             findViewById<View>(R.id.a1).setBackgroundColor(getResources().getColor(R.color.red, null))
@@ -70,7 +89,7 @@ class MainActivity : AppCompatActivity() {
                 answer2.visibility = View.INVISIBLE
                 answer3.visibility = View.INVISIBLE
                 shouldShowAnswers = false
-                Toast.makeText(this, "Exam button was clicked (1)", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "VisualChange was clicked (1)", Toast.LENGTH_SHORT).show()
             }
             else{
                 answer1.visibility = View.VISIBLE
@@ -81,7 +100,22 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        /*val timerButton = findViewById<ImageView>(R.id.timer)
+        timerButton.setOnClickListener {
+            timerOn = object : CountDownTimer(1500, 1000) {
+                fun timer(millisUntilFinished: Long) {
+                    findViewById<TextView>(R.id.timer).text = "" + millisUntilFinished / 1000
+                }
+                override fun onTick(p0: Long) {}
+                override fun onFinish() {}
+            }
+            fun startTimer() {
+                timerOn?.cancel()
+                timerOn?.start()
+            }
+        }*/
+        val resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+                result ->
             val data: Intent? = result.data
             //val extras = data?.extras
             if (data != null) { // Check data returned
@@ -113,10 +147,28 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AddCardActivity::class.java)
                 // Launch EndingActivity with the resultLauncher so we can execute more code - once we come back here from EndingActivity
             resultLauncher.launch(intent)
+            overridePendingTransition(R.anim.right_in, R.anim.left_out)
         }
 
         val nextButton = findViewById<ImageView>(R.id.next_button)
         nextButton.setOnClickListener {
+            val leftOutAnim = AnimationUtils.loadAnimation(this, R.anim.left_out)
+            val rightInAnim = AnimationUtils.loadAnimation(this, R.anim.right_in)
+            leftOutAnim.setAnimationListener(object : Animation.AnimationListener {
+                override fun onAnimationStart(animation: Animation?) {
+                    // this method is called when the animation first starts
+                }
+                override fun onAnimationEnd(animation: Animation?) {
+                    // this method is called when the animation is finished playing
+                    question1.startAnimation(rightInAnim)
+                }
+                override fun onAnimationRepeat(animation: Animation?) {
+                    // we don't need to worry about this method
+                }
+            })
+            question1.startAnimation(leftOutAnim)
+            findViewById<View>(R.id.flashcard_question).startAnimation(leftOutAnim)
+            findViewById<View>(R.id.flashcard_question).startAnimation(rightInAnim)
             if (allFlashcards.isEmpty()){
                 return@setOnClickListener
             }

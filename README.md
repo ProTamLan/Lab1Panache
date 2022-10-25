@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/75819639/197687978-33012d64-7bc1-450e-
 - [x] User sees a 'card flip' animation when the card is tapped
 - [ ] User sees a celebration animation with confetti when they answer a question correctly
 
-##Lab3~
+## Lab3~
 
 ### App Walk-though (Lab3)
 
@@ -42,7 +42,7 @@ https://user-images.githubusercontent.com/75819639/195012037-815243fc-4e6f-43b3-
 
 
 
-##Lab2~
+## Lab2~
 ### App Walk-though (Lab2)
 
 
@@ -65,7 +65,7 @@ https://user-images.githubusercontent.com/75819639/193988028-38ba40b7-a39c-4e52-
 - [ ] User can also enter multiple choice answers when creating a card
 
 
-##Lab1~
+## Lab1~
 
 
 ### App Walk-though (Lab1)
